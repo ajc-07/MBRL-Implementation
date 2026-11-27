@@ -3,7 +3,7 @@ name = "mbrl-implementation"
 version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = [
-    "gymnasium[mujoco]>=1.4.0",
+    "gymnasium[mujoco,other]>=1.4.0",
     "matplotlib>=3.11.2",
     "numpy>=2.5.5",
     "torch>=2.15.0",
