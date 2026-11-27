@@ -18,7 +18,7 @@ def reward_function(state: torch.Tensor) -> float:
         reward: The computed reward for the given state.
     """
     angle = state[1] # Recall the second element of state refers to the angle of the pole
-    if abs(angle) < 0.2:
+    if abs(angle) <= 0.2:
         return 1.0
     else:
         return 0.0

@@ -11,7 +11,7 @@ import torch.nn as nn
 
 class MLP(nn.Module):
     """
-    MLP-based dynamics model for MBRL. Takes in current state and action, outputs predicted next state.
+    MLP-based dynamics model for MBRL. Takes in current state and action, outputs predicted change in next state.
     """
     def __init__(self, 
                  input_dim: int, 
