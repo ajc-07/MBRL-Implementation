@@ -19,6 +19,14 @@ class MLP(nn.Module):
                  output_dim: int):
         """
         Initialize MLP model with given sizes, and randomly initialize parameters.
+
+        Args:
+            input_dim (int): Dimension of input (state + action).
+            hidden_dim (int): Dimension of hidden layer.
+            output_dim (int): Dimension of output (predicted next state).
+        
+        Returns:
+            None
         """
         super().__init__() # initialize the neural network module class
         self.input_dim = input_dim
@@ -41,14 +49,15 @@ class MLP(nn.Module):
                 state: torch.Tensor,
                 action: torch.Tensor) -> torch.Tensor:
         """
+        Predicts change from current state to next state given current state and action using the MLP model. Note state_dim and output_dim are the same (4,) while action_dim is (1,).
+        Learning the change in state can save us from relearning the current state as part of its prediction. Also they do this in the reference project: https://github.com/thubZ09/model-based-reinforcement-learning
+    
         Args: 
             state: tensor of shape (state_dim)
             action: tensor of shape (action_dim)
+        
         Returns:
             predicted_state: tensor of shape (output_dim)
-
-        Predicts change from current state to next state given current state and action using the MLP model. Note state_dim and output_dim are the same (4,) while action_dim is (1,).
-        Learning the change in state can save us from relearning the current state as part of its prediction. Also they do this in the reference project: https://github.com/thubZ09/model-based-reinforcement-learning
         """
         # Concatenate state and action as input to MLP
         # Note axis = -1 means concatenate at highest dimension, in this case both are 1D, so result is a 1D array
@@ -74,6 +83,13 @@ class MLP(nn.Module):
                            action: torch.Tensor) -> torch.Tensor:
         """
         Helper function to return next state instead of just delta.
+
+        Args: 
+            state: tensor of shape (state_dim)
+            action: tensor of shape (action_dim)
+
+        Returns:   
+            next_state: tensor of shape (output_dim)
         """
         delta = self.forward(state, action)  # shape (output_dim,)
         next_state = state + delta  # shape (output_dim,)

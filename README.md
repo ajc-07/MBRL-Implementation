@@ -24,3 +24,5 @@ Components:
 - Build MuJoCO env
 - Trained dynamics model
 - Planner to simulate candidate action sequences, score, and return first action of the best one
+
+Finished! To run the simple planner, run `python main.py --planner simple`.
