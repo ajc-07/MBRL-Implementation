@@ -1,0 +1,67 @@
+uv run python main.py --planner cem --num_trials 50
+Training model for 1000 epochs...
+Epoch [100/1000], Loss: 0.025539
+Epoch [200/1000], Loss: 0.003825
+Epoch [300/1000], Loss: 0.003471
+Epoch [400/1000], Loss: 0.003109
+Epoch [500/1000], Loss: 0.002611
+Epoch [600/1000], Loss: 0.002049
+Epoch [700/1000], Loss: 0.001459
+Epoch [800/1000], Loss: 0.000928
+Epoch [900/1000], Loss: 0.000545
+Epoch [1000/1000], Loss: 0.000305
+Evaluating model...
+Evaluation Loss: 0.000347
+
+Evaluating cem for 50 trials...
+cem trial 1/50: reward=48
+cem trial 2/50: reward=122
+cem trial 3/50: reward=271
+cem trial 4/50: reward=149
+cem trial 5/50: reward=64
+cem trial 6/50: reward=63
+cem trial 7/50: reward=167
+cem trial 8/50: reward=81
+cem trial 9/50: reward=100
+cem trial 10/50: reward=102
+cem trial 11/50: reward=49
+cem trial 12/50: reward=330
+cem trial 13/50: reward=56
+cem trial 14/50: reward=204
+cem trial 15/50: reward=51
+cem trial 16/50: reward=65
+cem trial 17/50: reward=83
+cem trial 18/50: reward=48
+cem trial 19/50: reward=83
+cem trial 20/50: reward=118
+cem trial 21/50: reward=142
+cem trial 22/50: reward=69
+cem trial 23/50: reward=46
+cem trial 24/50: reward=145
+cem trial 25/50: reward=52
+cem trial 26/50: reward=70
+cem trial 27/50: reward=43
+cem trial 28/50: reward=67
+cem trial 29/50: reward=48
+cem trial 30/50: reward=91
+cem trial 31/50: reward=69
+cem trial 32/50: reward=97
+cem trial 33/50: reward=49
+cem trial 34/50: reward=92
+cem trial 35/50: reward=116
+cem trial 36/50: reward=96
+cem trial 37/50: reward=150
+cem trial 38/50: reward=82
+cem trial 39/50: reward=57
+cem trial 40/50: reward=84
+cem trial 41/50: reward=139
+cem trial 42/50: reward=76
+cem trial 43/50: reward=114
+cem trial 44/50: reward=56
+cem trial 45/50: reward=183
+cem trial 46/50: reward=49
+cem trial 47/50: reward=91
+cem trial 48/50: reward=70
+cem trial 49/50: reward=71
+cem trial 50/50: reward=80
+Average cem reward: 96.96

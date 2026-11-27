@@ -1,0 +1,67 @@
+uv run python main.py --planner simple --num_trials 50 --online_learning
+Training model for 1000 epochs...
+Epoch [100/1000], Loss: 0.024683
+Epoch [200/1000], Loss: 0.004125
+Epoch [300/1000], Loss: 0.003731
+Epoch [400/1000], Loss: 0.003343
+Epoch [500/1000], Loss: 0.002839
+Epoch [600/1000], Loss: 0.002201
+Epoch [700/1000], Loss: 0.001506
+Epoch [800/1000], Loss: 0.000920
+Epoch [900/1000], Loss: 0.000513
+Epoch [1000/1000], Loss: 0.000287
+Evaluating model...
+Evaluation Loss: 0.000306
+
+Evaluating simple for 50 trials...
+simple trial 1/50: reward=73
+simple trial 2/50: reward=25
+simple trial 3/50: reward=59
+simple trial 4/50: reward=87
+simple trial 5/50: reward=208
+simple trial 6/50: reward=165
+simple trial 7/50: reward=24
+simple trial 8/50: reward=81
+simple trial 9/50: reward=187
+simple trial 10/50: reward=186
+simple trial 11/50: reward=21
+simple trial 12/50: reward=66
+simple trial 13/50: reward=56
+simple trial 14/50: reward=72
+simple trial 15/50: reward=48
+simple trial 16/50: reward=141
+simple trial 17/50: reward=108
+simple trial 18/50: reward=40
+simple trial 19/50: reward=73
+simple trial 20/50: reward=6
+simple trial 21/50: reward=50
+simple trial 22/50: reward=165
+simple trial 23/50: reward=65
+simple trial 24/50: reward=55
+simple trial 25/50: reward=19
+simple trial 26/50: reward=325
+simple trial 27/50: reward=54
+simple trial 28/50: reward=43
+simple trial 29/50: reward=77
+simple trial 30/50: reward=147
+simple trial 31/50: reward=46
+simple trial 32/50: reward=44
+simple trial 33/50: reward=60
+simple trial 34/50: reward=53
+simple trial 35/50: reward=10
+simple trial 36/50: reward=40
+simple trial 37/50: reward=59
+simple trial 38/50: reward=108
+simple trial 39/50: reward=74
+simple trial 40/50: reward=69
+simple trial 41/50: reward=97
+simple trial 42/50: reward=77
+simple trial 43/50: reward=99
+simple trial 44/50: reward=9
+simple trial 45/50: reward=58
+simple trial 46/50: reward=95
+simple trial 47/50: reward=55
+simple trial 48/50: reward=241
+simple trial 49/50: reward=82
+simple trial 50/50: reward=102
+Average simple reward: 84.08
